@@ -13,7 +13,7 @@ const ReactElement = function (
   type: Type,
   key: Key,
   ref: Ref,
-  props: Props,
+  props: Props
 ): ReactElement {
   const element = {
     $$typeof: REACT_ELEMENT_TYPE,
@@ -25,7 +25,7 @@ const ReactElement = function (
   };
   return element;
 };
-
+// createElement("div", {id:"123", children:"123"})
 export const jsx = (type: ElementType, config: any, ...maybeChildren: any) => {
   let key: Key = null;
   const props: Props = {};
