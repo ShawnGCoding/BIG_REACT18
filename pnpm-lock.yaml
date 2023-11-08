@@ -38,6 +38,21 @@ importers:
       rollup-plugin-typescript2: registry.npmmirror.com/rollup-plugin-typescript2/0.36.0_seqkbsy7xyt2cplfqq32zmiy7i
       typescript: registry.npmmirror.com/typescript/5.2.2
 
+  packages/react:
+    specifiers:
+      shared: workspace:*
+    dependencies:
+      shared: link:../shared
+
+  packages/react-reconciler:
+    specifiers:
+      shared: 'workspace: *'
+    dependencies:
+      shared: link:../shared
+
+  packages/shared:
+    specifiers: {}
+
 packages:
 
   registry.npmmirror.com/@aashutoshrathi/word-wrap/1.2.6:
